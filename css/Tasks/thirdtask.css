@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(114, 49, 10);
+}
+
+h1 {
+    font-style: normal;
+    background-color: rgb(31, 226, 29);
+}
+
+li {
+    background-color: rgb(255, 255, 2);
+    border: 1px solid rgb(114, 49, 10);
+}
+
+ul {
+    background-color: red;
+}
+
+#first {
+    background-color: blue;
+}
+
+.list {
+    font-style: italic;
+}

@@ -1,0 +1,20 @@
+h1 {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    background: yellow;
+    /* border-color: green;
+    border-width: 5px;
+    border-style: dotted; */
+    border: 5px solid blue;
+}
+
+body {
+    background: url(https://img.freepik.com/free-photo/a-man-plays-an-electronic-piano-in-a-dark-room_169016-20899.jpg?t=st=1662580583~exp=1662581183~hmac=649bfa2bd210481e3bef9eec83cabfc7bd0725327da456c5a848ba2e74770485) no-repeat center/100%;
+}
+
+#first {
+    background-color: blue;
+}

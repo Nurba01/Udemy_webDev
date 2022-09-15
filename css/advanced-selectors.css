@@ -1,0 +1,26 @@
+p {}
+
+#id {}
+
+* {}
+
+.my-div * {
+    border: 1px solid green;
+}
+
+h2+ul {
+    color: red;
+}
+
+li a {
+    background-color: yellow;
+}
+
+a[href="httpa://google.com"] {
+    background-color: green;
+}
+
+ul:nth-of-type(2) {
+    background-color: blue;
+    color: white;
+}

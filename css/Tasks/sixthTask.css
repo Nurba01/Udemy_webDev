@@ -1,0 +1,17 @@
+.firstDiv {
+    background-color: red;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: 0;
+}
+
+.secondDiv {
+    background-color: green;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
