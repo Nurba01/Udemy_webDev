@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../Library/jquery-3.6.1.min (1).js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <input type="text" name="text" id="" placeholder="Some text">
+
+    <h1 class="firstElement secondElement">Rainbow colors</h1>
+
+    <ul>
+        <li class="red">Red</li>
+        <li>Orange</li>
+        <li>Yellow</li>
+        <li>Green</li>
+        <li>Blue</li>
+        <li>Indigo</li>
+        <li>Violet</li>
+    </ul>
+
+    <ol>
+        <li id="one">ONe</li>
+        <li>two</li>
+        <li>Three</li>
+    </ol>
+
+    <button>FadeOut</button>
+    <button class="clickToggle">Click</button>
+    <button class="slideUp">slideToggle</button>
+    <button>FadeIn</button>
+
+    <script>
+        // if (jQuery) {
+        //     alert('Jquery is added');
+        // } else {
+        //     alert("isn't added");
+        // }
+        let colorChange = document.querySelectorAll("ul li");
+        for (let i = 0; i < colorChange.length; i++) {
+            colorChange[i].style.color = "red";
+        }
+        $('li').on('mouseenter', function() {
+
+            $(this).css('color', 'green');
+        });
+
+        $('li').on('mouseleave', function() {
+
+            $(this).css('color', 'black');
+        });
+
+        $('button').first().on('click', function() {
+            $('li').fadeOut(1000);
+        });
+
+        $('button').last().on('click', function() {
+            $('li').fadeIn(3000);
+        });
+
+        $('.clickToggle').on('click', function() {
+            $('li').fadeToggle(2000);
+        });
+        $('.slideUp').on('click', function() {
+            $('h1').slideToggle(1000, function() {
+                console.log("slideToggle");
+            })
+        });
+    </script>
+</body>
+
+</html>
